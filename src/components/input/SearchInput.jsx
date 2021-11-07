@@ -27,7 +27,7 @@ function SearchInput(props) {
 
     function renderOption(){
         return ( placeList.map(place => {
-            return <option value={place}/>
+            return <option key={placeList.indexOf(place)} value={place}/>
         }))
     }
 
