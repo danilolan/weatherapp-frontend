@@ -1,8 +1,8 @@
 import React, {useState, useEffect} from 'react';
 import axios from 'axios'
-import './searchinput.scss'
+import './search.scss'
 
-function SearchInput(props) {
+function Search(props) {
     const [inputV, setinputV] = useState('')
     const [placeList, setPlaceList] = useState(['Campina','Patos','Joao Pessoa'])
 
@@ -60,4 +60,4 @@ function SearchInput(props) {
     </div> );
 }
 
-export default SearchInput;
+export default Search;
