@@ -5,14 +5,15 @@ import SearchInput from '../input/SearchInput';
 import axios from 'axios'
 
 function App() {
-  function search(){
-    console.log('Procurar')
+  function getData(data){
+    console.log(data)
   }
+  
   return (
     <div className="App">
       <div className="maincontainer">
-        <SearchInput></SearchInput>
-        <button onClick={e=>search()}>Pesquisar</button>
+        <SearchInput getData={e=>getData(e)}/>
+        
       </div>
       <Map></Map>
     </div>

@@ -7,18 +7,17 @@ function SearchInput(props) {
     const [placeList, setPlaceList] = useState(['Campina','Patos','Joao Pessoa'])
 
     useEffect(() => {
-        const search = { search: inputV }
-        axios.post('http://localhost:3001/autocomplete', search)
+        axios.get(`http://localhost:3001/autocomplete?string=${inputV}`)
             .then(resp => {
                 const predictions = resp.data.predictions
                 const newList = []
                 try{
                     for(var i = 0; i < predictions.length; i++){
-                        newList.push(predictions[i].description)
+                        newList.push(predictions[i])
                     }
                 }
                 catch{
-                    setPlaceList([])
+
                 }
                 setPlaceList(newList)
             
@@ -27,9 +26,23 @@ function SearchInput(props) {
 
     function renderOption(){
         return ( placeList.map(place => {
-            return <option key={placeList.indexOf(place)} value={place}/>
+            return <option key={placeList.indexOf(place)} value={place.description}/>
         }))
     }
+
+    function search(){
+        const id = placeList[0].place_id
+        axios.get(`http://localhost:3001/search?id=${id}`)
+            .then(resp => {
+                try{
+                    props.getData(resp.data)
+                }
+                catch(error){
+                    console.log(error)
+                }
+            
+            })
+      }
 
     return ( 
     <div className="searchinput">
@@ -39,10 +52,11 @@ function SearchInput(props) {
             onChange={e=>(setinputV(e.target.value))}
             list="places" 
         />
-
         <datalist id="places">
             {renderOption()}
         </datalist>
+
+        <button onClick={e=>search()}>Pesquisar</button>
     </div> );
 }
 
