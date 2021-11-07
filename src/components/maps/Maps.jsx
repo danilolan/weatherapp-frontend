@@ -3,6 +3,8 @@ import { GoogleMap, useJsApiLoader } from '@react-google-maps/api';
 
 import './map.scss'
 
+import key from '../../data/keys'
+
 const containerStyle = {
   width: '100%',
   height: '100%'
@@ -16,7 +18,7 @@ const center = {
 function MyComponent() {
   const { isLoaded } = useJsApiLoader({
     id: 'google-map-script',
-    googleMapsApiKey: "***REMOVED***"
+    googleMapsApiKey: key.google
   })
 
   const [map, setMap] = React.useState(null)
