@@ -31,7 +31,13 @@ function Search(props) {
     }
 
     function search(){
-        const id = placeList[0].place_id
+        var id
+        try{
+            id = placeList[0].place_id
+        }
+        catch{
+            console.log('Place id não registrado')
+        }
         axios.get(`http://localhost:3001/search?id=${id}`)
             .then(resp => {
                 try{
