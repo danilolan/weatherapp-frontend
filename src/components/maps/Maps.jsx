@@ -7,6 +7,7 @@ function MapView(props) {
     new window.google.maps.Map(mapRef.current, {
       center: props.center,
       zoom: props.zoom,
+      disableDefaultUI: true
     });
   }, [props]);
   return <div 

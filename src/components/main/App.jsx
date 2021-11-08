@@ -3,6 +3,7 @@ import axios from 'axios'
 import Map from '../maps/Maps'
 import Search from '../search/Search';
 import './App.scss';
+import 'font-awesome/css/font-awesome.min.css'
 
 function App() {
   const [location, setLocation] = useState({lat:-7.2206167, lng: -35.8888328})
@@ -27,8 +28,23 @@ function App() {
   
   return (
     <div className="App">
+
       <Search getData={e=>getData(e)}/>
-      <Map center={location} zoom={9}/>
+
+      <div className="maincontainer">
+        <div className="weathercontainer">    
+          weather   
+        </div>
+        <div className="statscontainer">
+          stats
+        </div>
+        <div className="locationcontainer">
+          Location         
+        </div>
+        <div className="mapcontainer">
+          <Map center={location} zoom={9}/>
+        </div>
+      </div>
     </div>
   );
 }

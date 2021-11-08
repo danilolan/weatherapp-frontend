@@ -62,7 +62,9 @@ function Search(props) {
             {renderOption()}
         </datalist>
 
-        <button onClick={e=>search()}>Pesquisar</button>
+        <button onClick={e=>search()}>
+            <i className="fa fa-search fa-2x"></i>
+        </button>
     </div> );
 }
 
