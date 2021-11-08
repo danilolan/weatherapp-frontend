@@ -14,18 +14,11 @@
   .maincontainer{
     width: max;
     height: max;
-    margin: 50px 300px;
+    margin: 50px auto;
     display: grid;
     grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
 
-    .weathercontainer{
-      display: flex;
-      flex-direction: column;
-      margin: 5px;
-      background-color: #00000028;
-      color: white;
-      border-radius: 2px;
-    }
     .statscontainer{
       display: grid;
       grid-template-rows: 1fr 1fr;

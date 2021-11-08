@@ -41,7 +41,7 @@ function Search(props) {
         axios.get(`http://localhost:3001/search?id=${id}`)
             .then(resp => {
                 try{
-                    props.getData(resp.data)
+                    props.getData(resp.data.result.geometry.location)
                 }
                 catch(error){
                     console.log(error)

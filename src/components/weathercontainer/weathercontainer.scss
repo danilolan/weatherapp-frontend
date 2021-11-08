@@ -1,0 +1,92 @@
+.weathercontainer{
+    display: flex;
+    flex-direction: column;
+    margin: 5px;
+    backdrop-filter: blur(5px);
+    color: white;
+    border-radius: 2px;
+    width: 500px;
+    overflow: hidden;
+
+    .buttoncont{
+        display: flex;
+        align-items: flex-start;
+        border-radius: 5px;
+        button{
+            border: none;
+            border-bottom: solid 3px rgba(255, 255, 255, 0.226);
+            background: none;
+            color: white;
+            font-family: 'Roboto';
+            padding: 10px 20px;
+            font-weight: 300;
+            font-size: 1.1em;
+            transition: 0.3s;
+            &:hover{
+                cursor: pointer;
+                background: rgba(0, 0, 0, 0.253);
+            }
+        }
+        &.levelcurrent{
+            .btncurrent{
+                    border-bottom: solid 3px white;
+            }
+            
+        }
+        &.levelhourly{
+            .btnhourly{
+                    border-bottom: solid 3px white;
+            }
+            
+        }
+        &.leveltendays{
+            .btntendays{
+                    border-bottom: solid 3px white;
+            }
+            
+        }
+    }
+    .content{
+        height: 100%;
+        transition: 0.5s;
+
+        .levelcurrent{
+            display:grid;
+            grid-template-columns: 500px 500px 500px;
+            transform: translate(0);
+            height: 100%;
+            transition: 0.5s;
+        }
+        .levelhourly{
+            display:grid;
+            grid-template-columns: 500px 500px 500px;
+            transform: translate(-500px);
+            height: 100%;
+            transition: 0.5s;
+        }
+        .leveltendays{
+            display:grid;
+            grid-template-columns: 500px 500px 500px;
+            transform: translate(-1000px);
+            height: 100%;
+            transition: 0.5s;         
+        }
+
+        .current{
+            width: max;
+            height: 100%;
+            margin: 0px 10px;
+
+        }
+        .hourly{
+            width: max;
+            height: 100%;
+            margin: 0px 10px;
+        }
+        .tendays{
+            width: max;
+            height: 100%;
+            margin: 0px 10px;
+        }
+    }
+  }
