@@ -1,0 +1,195 @@
+{
+	"data":[
+	{
+		"id" : 1000,
+		"condition" : "sunny"
+	},
+	{
+		"id" : 1003,
+		"condition" : "partlycloudy"
+	},
+	{
+		"id" : 1006,
+		"condition" : "cloudy"
+	},
+	{
+		"id" : 1009,
+		"condition" : "cloudy"
+	},
+	{
+		"id" : 1030,
+		"condition" : "cloudy"
+	},
+	{
+		"id" : 1063,
+		"condition" : "rain"
+	},
+	{
+		"id" : 1066,
+		"condition" : "snow"
+	},
+	{
+		"id" : 1069,
+		"condition" : "blizzard"
+	},
+	{
+		"id" : 1072,
+		"condition" : "rain"
+    },
+	{
+		"id" : 1087,
+		"condition" : "thunder"
+	},
+	{
+		"id" : 1114,
+		"condition" : "snow"
+	},
+	{
+		"id" : 1117,
+		"condition" : "blizzard"
+	},
+	{
+		"id" : 1135,
+		"condition" : "fog"
+	},
+	{
+		"id" : 1147,
+		"condition" : "fog"
+	},
+	{
+		"id" : 1150,
+		"condition" : "rain"
+	},
+	{
+		"id" : 1153,
+		"condition" : "rain"
+	},
+	{
+		"id" : 1168,
+		"condition" : "rain"
+	},
+	{
+		"id" : 1171,
+		"condition" : "rain"
+	},
+	{
+		"id" : 1180,
+		"condition" : "rain"
+	},
+	{
+		"id" : 1183,
+		"condition" : "rain"
+	},
+	{
+		"id" : 1186,
+		"condition" : "rain"
+	},
+	{
+		"id" : 1189,
+		"condition" : "rain"
+	},
+	{
+		"id" : 1192,
+		"condition" : "rain"
+	},
+	{
+		"id" : 1195,
+		"condition" : "rain"
+	},
+	{
+		"id" : 1198,
+		"condition" : "rain"
+	},
+	{
+		"id" : 1201,
+		"condition" : "rain"
+	},
+	{
+		"id" : 1204,
+		"condition" : "blizzard"
+	},
+	{
+		"id" : 1207,
+		"condition" : "blizzard"
+	},
+	{
+		"id" : 1210,
+		"condition" : "snow"
+	},
+	{
+		"id" : 1213,
+		"condition" : "snow"
+	},
+	{
+		"id" : 1216,
+		"condition" : "snow"
+	},
+	{
+		"id" : 1219,
+		"condition" : "snow"
+	},
+	{
+		"id" : 1222,
+		"condition" : "snow"
+	},
+	{
+		"id" : 1225,
+		"condition" : "blizzard"
+	},
+	{
+		"id" : 1237,
+		"condition" : "blizzard"
+	},
+	{
+		"id" : 1240,
+		"condition" : "rain"
+	},
+	{
+		"id" : 1243,
+		"condition" : "rain"
+	},
+	{
+		"id" : 1246,
+		"condition" : "rain"
+	},
+	{
+		"id" : 1249,
+		"condition" : "rain"
+	},
+	{
+		"id" : 1252,
+		"condition" : "blizzard"
+	},
+	{
+		"id" : 1255,
+		"condition" : "snow"
+	},
+	{
+		"id" : 1258,
+		"condition" : "blizzard"
+	},
+	{
+		"id" : 1261,
+		"condition" : "blizzard"
+	},
+	{
+		"id" : 1264,
+		"condition" : "blizzard"
+	},
+	{
+		"id" : 1273,
+		"condition" : "thunder"
+	},
+	{
+		"id" : 1276,
+		"condition" : "thunder"
+	},
+	{
+		"id" : 1279,
+		"condition" : "thunder"
+	},
+	{
+		"id" : 1282,
+		"condition" : "blizzard"
+	}
+]}

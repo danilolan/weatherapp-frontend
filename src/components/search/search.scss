@@ -16,6 +16,10 @@
         &:focus{
             
         }
+        &::-webkit-input-placeholder{
+            color: rgba(235, 235, 235, 0.719);
+            font-weight: 100px;
+        }
     }
     button{
         height: max;

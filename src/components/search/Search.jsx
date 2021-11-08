@@ -56,7 +56,8 @@ function Search(props) {
             type="text"
             value={inputV}
             onChange={e=>(setinputV(e.target.value))}
-            list="places" 
+            list="places"
+            placeholder="Ex: Campina Grande, State of Paraíba, Brazil..." 
         />
         <datalist id="places">
             {renderOption()}

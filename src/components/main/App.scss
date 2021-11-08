@@ -1,25 +1,30 @@
-.App {
+.app {
   font-family: 'Roboto', sans-serif;
   text-align: center;
   width: 100vw;
   height: 100vh;
   display: grid;
   grid-template-rows: max-content 1fr;
-  background: #4776E6;
+  /* background: #4776E6;
   background: -webkit-linear-gradient(to right, #8E54E9, #4776E6);
-  background: linear-gradient(to right, #8E54E9, #4776E6);
+  background: linear-gradient(to right, #8E54E9, #4776E6); */
+  background-repeat:no-repeat;
+  background-size: cover;
+
   .maincontainer{
     width: max;
     height: max;
     margin: 50px 300px;
     display: grid;
     grid-template-columns: 1fr 1fr;
+
     .weathercontainer{
       display: flex;
       flex-direction: column;
-      background: rgb(230, 230, 230);
       margin: 5px;
-      box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+      background-color: #00000028;
+      color: white;
+      border-radius: 2px;
     }
     .statscontainer{
       display: grid;
@@ -40,5 +45,31 @@
       margin: 5px;
       box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
     }
+  }
+
+
+  &.sunny{
+    background-image: url('../../assets/background/sunny.jpg');
+  }
+  &.partlycloudy{
+    background-image: url('../../assets/background/partlycloudy.jpg');
+  }
+  &.cloudy{
+    background-image: url('../../assets/background/cloudy.jpg');
+  }
+  &.rain{
+    background-image: url('../../assets/background/rain.jpg');
+  }
+  &.thunder{
+    background-image: url('../../assets/background/thunder.jpg');
+  }
+  &.fog{
+    background-image: url('../../assets/background/fog.jpg');
+  }
+  &.snow{
+    background-image: url('../../assets/background/snowing.jpg');
+  }
+  &.blizzard{
+    background-image: url('../../assets/background/blizzard.jpg');
   }
 }
