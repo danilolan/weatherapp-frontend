@@ -1,0 +1,30 @@
+.locationcontainer{
+    display: flex;
+    flex-direction: column;
+    background: rgba(61, 61, 61, 0.568);
+    margin: 5px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    backdrop-filter: blur(5px);
+    color: white;
+    .title{
+        width: 100%;
+        background-color: #0003 ;
+        font-size: 1.3em;
+        font-weight: 300;
+    }
+    .stats{
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        font-size: 1.2em;
+        table{
+            text-align: start;
+            th{
+                text-align: start;
+            }
+            tr{
+                font-weight: 300;
+            }
+        }
+    }
+  }

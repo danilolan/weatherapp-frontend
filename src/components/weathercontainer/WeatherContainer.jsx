@@ -1,5 +1,5 @@
 import React, {useState} from 'react';
-import MainWeather from './MainWeather';
+import MainWeather from './mainweather/MainWeather';
 import './weathercontainer.scss'
 
 function WeatherContainer(props) {

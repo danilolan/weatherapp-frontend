@@ -18,10 +18,10 @@
             position: relative;
             .feelslike{
                 font-weight: 300;
-                position: absolute;
-                left: 0;
+                margin-right: 10px;
             }
             select{
+                float: right;
                 padding: 2px 10px;
                 border: solid 1px white;
                 border-radius: 5px;
@@ -30,8 +30,6 @@
                 color: white;
                 font-family: 'Roboto', sans-serif;
                 font-size: 1em;
-                position: absolute;
-                right: 0;
                 -webkit-appearance: none;
                 -moz-appearance: none;
                 text-indent: 1px;

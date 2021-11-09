@@ -7,7 +7,8 @@ import 'font-awesome/css/font-awesome.min.css'
 import Map from '../maps/Maps'
 import Search from '../search/Search';
 import WeatherContainer from '../weathercontainer/WeatherContainer';
-import switchBackground from '../switchBackground/switchBackground';
+import switchBackground from './switchBackground/switchBackground';
+import LocationContainer from '../locationcontainer/LocationContainer';
 
 
 function App() {
@@ -47,11 +48,9 @@ function App() {
 
       <div className="maincontainer">
         <WeatherContainer currentWeather={weather}/>
-        <div className="statscontainer">
-          stats
-        </div>
+        <LocationContainer data={weather}/>
         <div className="locationcontainer">
-          Location         
+          Stats       
         </div>
         <div className="mapcontainer">
           <Map center={location} zoom={9}/>
