@@ -17,10 +17,18 @@
         display: flex;
         flex-direction: column;
         font-size: 1.2em;
+        img{
+            width: 20px;
+            height: 20px;
+        }
         table{
             text-align: start;
             th{
                 text-align: start;
+                align-items: center;
+                padding-right: 10px;
+                font-weight: 400;
+
             }
             tr{
                 font-weight: 300;

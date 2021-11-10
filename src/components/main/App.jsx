@@ -48,11 +48,9 @@ function App() {
       <Search getData={e=>setLocation(e)}/>
 
       <div className="maincontainer">
-
         <WeatherContainer currentWeather={weather}/>
         <LocationContainer data={weather}/>
         <StatsContainer data={weather}/>
-
         <div className="mapcontainer">
           <Map center={location} zoom={9}/>
         </div>

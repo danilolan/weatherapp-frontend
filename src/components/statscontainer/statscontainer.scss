@@ -63,6 +63,9 @@
             display: grid;
             grid-template-columns: 110px 1fr;
             grid-template-rows: max-content 1fr;
+            th{
+                font-weight: 400;
+            }
             .title{
                 background: none;
                 margin-bottom: 20px;
