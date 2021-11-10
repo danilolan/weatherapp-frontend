@@ -18,14 +18,6 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
-
-    .statscontainer{
-      display: grid;
-      grid-template-rows: 1fr 1fr;
-      background: rgb(230, 230, 230);
-      margin: 5px;
-      box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-    }
         
     .mapcontainer{
       background: rgb(230, 230, 230);

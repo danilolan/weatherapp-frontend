@@ -1,0 +1,188 @@
+#root{
+    --watervalue: 100%
+}
+
+
+.statscontainer{
+    display: flex;
+    flex-direction: column;
+    background: rgba(61, 61, 61, 0.568);
+    margin: 5px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    backdrop-filter: blur(5px);
+    color: white;
+    .title{
+        width: 100%;
+        background-color: #0003 ;
+        font-size: 1.3em;
+        font-weight: 300;
+    }
+    .stats{
+        padding: 20px;
+        display: grid;
+        grid-template-columns: 1fr max-content;
+        grid-template-rows: 75% 1fr;
+        font-size: 1.2em;
+        height: 100%;
+        
+        
+        .umid{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            .title{
+                background: none;
+                margin-bottom: 20px;
+            }
+            .watercontainer{
+                height: 96px;
+                width: 96px;
+                border: 2px solid white;
+                border-radius: 50%;
+                overflow: hidden;
+                position: relative;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                .valor{
+                    font-size: 1.5em;
+                    height: max-content;
+                    z-index: 1;
+                    font-weight: 300;
+                }
+                .water{
+                    position: absolute;
+                    width: 100%;
+                    height: 100%;
+                    background: #506AD4;
+                }
+            }
+        }
+        .wind{
+            display: grid;
+            grid-template-columns: 110px 1fr;
+            grid-template-rows: max-content 1fr;
+            .title{
+                background: none;
+                margin-bottom: 20px;
+                grid-column: span 2;
+            }
+            .compasscontainer{
+                    height: 96px;
+                    width: 96px;
+                    position: relative;
+                    border: 2px solid white;
+                    border-radius: 50%;
+                    overflow: hidden;
+                .markers{
+                    height: 96%;
+                    width: 96%;
+                    position: absolute;
+                    font-size: 0.7em;
+                    font-weight: 200;
+                    padding: 2px;
+                    position: absolute;
+                    z-index: 0;
+                    .n{
+                        position: absolute;
+                        width: 97px;
+                    }
+                    .e{
+                        position: absolute;
+                        right: 0;
+                        margin-top: 39px;
+                        margin-right: 3px;
+                    }
+                    .w{
+                        position: absolute;
+                        margin-top: 39px;
+                        margin-left: 3px;
+                    }
+                    .s{
+                        position: absolute;
+                        bottom: 0;
+                        margin-left: 44px;
+                        margin-bottom: 3px;
+                    }
+
+                }
+                .compass{
+                    position: absolute;
+                    height: 100%;
+                    width: 100%;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    img{
+                        height: 50px;
+                        width: 50px;
+                    }
+                    .pointer{
+                        height: 30px;
+                        width: 3px;
+                        background: rgb(0, 0, 0);
+                        border-radius: 10px;
+                        position: absolute;
+                    }
+                        .left{
+                            width: 10px;
+                            height: 3px;
+                            border-radius: 10px;
+                            transform: rotate(-40deg);
+                            background: black;
+                            margin-top: 3px;
+
+                        }
+                        .right{
+                            width: 10px;
+                            height: 3px;
+                            border-radius: 10px;
+                            transform: rotate(40deg);
+                            background: black;
+                            margin-top: 3px;
+                        }
+                    
+                
+            }
+            }
+            .display{
+                font-size: 0.8em;
+                font-weight: 200;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+        }
+        .otherstats{
+            border-top: solid 1px rgba(255, 255, 255, 0.521);
+            margin: 5px 20px 0px 20px;
+            grid-column: span 2;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            font-size: 0.7em;
+            font-weight: 200;
+            justify-content: center;
+            align-items: center;
+            img{
+                height: 40px;
+                width: 40px;
+                border-right: 1px solid rgba(255, 255, 255, 0.521);
+                margin-right: 10px;
+                padding-right: 10px;
+            }
+            .precip{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin-top: 5px;
+            }
+            .uv{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin-top: 5px;
+            }
+        }
+    }
+  }

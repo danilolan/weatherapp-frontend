@@ -9,6 +9,7 @@ import Search from '../search/Search';
 import WeatherContainer from '../weathercontainer/WeatherContainer';
 import switchBackground from './switchBackground/switchBackground';
 import LocationContainer from '../locationcontainer/LocationContainer';
+import StatsContainer from '../statscontainer/StatsContainer';
 
 
 function App() {
@@ -47,11 +48,11 @@ function App() {
       <Search getData={e=>setLocation(e)}/>
 
       <div className="maincontainer">
+
         <WeatherContainer currentWeather={weather}/>
         <LocationContainer data={weather}/>
-        <div className="locationcontainer">
-          Stats       
-        </div>
+        <StatsContainer data={weather}/>
+
         <div className="mapcontainer">
           <Map center={location} zoom={9}/>
         </div>
