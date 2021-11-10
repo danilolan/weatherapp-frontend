@@ -36,9 +36,13 @@ function MainWeather(props) {
                         </select>
                     </div>
                 </div>
-                <div className="icon">
-                    <img src={data.current.condition.icon} alt="loading..." />
+                <div className="condition">
+                    <div className="icon">
+                        <img src={data.current.condition.icon} alt="loading..." />
+                    </div>
+                    {data.current.condition.text}
                 </div>
+                
             </div>
          );
     }
