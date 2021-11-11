@@ -10,6 +10,7 @@ import WeatherContainer from '../weathercontainer/WeatherContainer';
 import switchBackground from './switchBackground/switchBackground';
 import LocationContainer from '../locationcontainer/LocationContainer';
 import StatsContainer from '../statscontainer/StatsContainer';
+import Footer from '../footer/Footer'
 
 function App() {
   const [loadingDone, setLoadingDone] = useState(false);
@@ -51,9 +52,9 @@ function App() {
 
   async function delayLoading() {
     console.log('start timer');
-    await new Promise(resolve => setTimeout(resolve, 1000));
+    await new Promise(resolve => setTimeout(resolve, 2000));
     setLoadingDone(true)
-    console.log('after 1 second');
+    console.log('after 2 second');
   }
   
 
@@ -70,13 +71,17 @@ function App() {
           <Map center={location} zoom={9}/>
         </div>
       </div>
+
+      <Footer></Footer>
+
     </div>
     :
     <div className="loading">
       <div className="circleout">
         <div className="circlein"></div>
       </div>
-      
+
+      <Footer></Footer>
     </div>
   );
 }
