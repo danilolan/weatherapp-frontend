@@ -11,8 +11,9 @@ import switchBackground from './switchBackground/switchBackground';
 import LocationContainer from '../locationcontainer/LocationContainer';
 import StatsContainer from '../statscontainer/StatsContainer';
 
-
 function App() {
+  const [loadingDone, setLoadingDone] = useState(false);
+
   const [location, setLocation] = useState({lat:-7.2206167, lng: -35.8888328})
   const [classes, setClasses] = useState('app cloudy')
   const [weather, setWeather] = useState(()=>{
@@ -34,18 +35,32 @@ function App() {
       .then(resp=>{
         try{
           setClasses('app ' + switchBackground(resp.data.current.condition.code))
-          setWeather(resp.data)
+          setWeather(resp.data)   
+          delayLoading()      
         }
         catch(error){
           console.log(error)
-        }
+        }              
       })
   }, [location])
 
-  return (
+  function search(location){
+    setLoadingDone(false)
+    setLocation(location)
+  }
+
+  async function delayLoading() {
+    console.log('start timer');
+    await new Promise(resolve => setTimeout(resolve, 1000));
+    setLoadingDone(true)
+    console.log('after 1 second');
+  }
+  
+
+  return ( loadingDone ?
     <div className={classes}>
 
-      <Search getData={e=>setLocation(e)}/>
+      <Search getData={e=>search(e)}/>
 
       <div className="maincontainer">
         <WeatherContainer currentWeather={weather}/>
@@ -56,7 +71,13 @@ function App() {
         </div>
       </div>
     </div>
+    :
+    <div className="loading">
+      <div className="circleout">
+        <div className="circlein"></div>
+      </div>
+      
+    </div>
   );
 }
-
 export default App;
