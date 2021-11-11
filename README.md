@@ -12,6 +12,7 @@ A aplicação consiste em mostrar ao usuário de forma simples prática e objeti
 ![Web 2](https://github.com/danilolan/assets/blob/main/weatherapp2.gif)
 ## Features
 - Autocomplete na barra de pesquisas de locais
+- Background dinâmico em relação ao clima no local pesquisado
 - Dados em tempo real
 - Container com 3 abas de rolagem lateral (Current, hourly, 10 days)
 - Container com dados da localização
