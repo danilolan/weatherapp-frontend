@@ -10,6 +10,14 @@ A aplicação consiste em mostrar ao usuário de forma simples prática e objeti
 ![Web 1](https://github.com/danilolan/assets/blob/main/weatherapp1.gif)
 
 ![Web 2](https://github.com/danilolan/assets/blob/main/weatherapp2.gif)
+## Features
+- Autocomplete na barra de pesquisas de locais
+- Dados em tempo real
+- Container com 3 abas de rolagem lateral (Current, hourly, 10 days)
+- Container com dados da localização
+- Indicador que enche proporcionalmente ao nível de umidade
+- Bússula dinâmica que mostra a direção do vento
+- Mapa dinâmico e utilizável
 
 # Tecnologias utilizadas
 ## Back end
