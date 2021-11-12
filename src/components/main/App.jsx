@@ -12,13 +12,15 @@ import LocationContainer from '../locationcontainer/LocationContainer';
 import StatsContainer from '../statscontainer/StatsContainer';
 import Footer from '../footer/Footer'
 
+import key from '../../data/keys'
+
 function App() {
   const [loadingDone, setLoadingDone] = useState(false);
 
   const [location, setLocation] = useState({lat:-7.2206167, lng: -35.8888328})
   const [classes, setClasses] = useState('app cloudy')
   const [weather, setWeather] = useState(()=>{
-    axios.get(`http://localhost:3001/weather?lat=${location.lat}&lng=${location.lng}`)
+    axios.get(`http://api.weatherapi.com/v1/current.json?key=${key.weather}&q=${location.lat},${location.lng}&aqi=no`)
       .then(resp=>{
         try{
           setClasses('app ' + switchBackground(resp.data.current.condition.code))
@@ -32,7 +34,7 @@ function App() {
   
 
   useEffect(() => {
-    axios.get(`http://localhost:3001/weather?lat=${location.lat}&lng=${location.lng}`)
+    axios.get(`http://api.weatherapi.com/v1/current.json?key=${key.weather}&q=${location.lat},${location.lng}&aqi=no`)
       .then(resp=>{
         try{
           setClasses('app ' + switchBackground(resp.data.current.condition.code))
@@ -46,6 +48,7 @@ function App() {
   }, [location])
 
   function search(location){
+    console.log(location)
     setLoadingDone(false)
     setLocation(location)
   }
